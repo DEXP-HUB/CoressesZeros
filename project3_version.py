@@ -8,9 +8,8 @@ class Game:
 
     def start_game(self):
        while True:
-           if self.check_victory() in None:
+           if self.check_victory() is None:
                self.motion_players((self.check_lock_cell, player[0]))
-
 
     def motion_players(self, callback, player):
             print(f'Ходит {player[0]}')
